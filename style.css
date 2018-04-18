@@ -30,9 +30,10 @@ a
 
 .nav-header
 {
-/*   background: #25437A;
+  background: #25437A;
   position: fixed;
-  width: 100%; */
+  width: 100%;
+  z-index: 2;
 }
 
 .navbar
@@ -89,6 +90,7 @@ a
 .image
 {
   width: 100%;
+  z-index: 1;
 }
 
 .heading
