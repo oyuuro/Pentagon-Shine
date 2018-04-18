@@ -1,0 +1,522 @@
+*
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  margin: 0;
+  background: #F0B3B3;
+}
+
+ul, ol
+{
+  list-style: none;
+  padding: 0;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+/* ============HEADER============ */
+
+.header
+{
+  margin: 0 auto;
+  background: #25437A;
+}
+
+.nav-header
+{
+  background: #25437A;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar
+{
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+}
+
+.nav-logo
+{
+  /* border: 1px solid white; */
+  width: 40px;
+  transition: 0.5s;
+}
+
+.nav-logo:hover
+{
+  width: 45px;
+}
+
+.socials
+{
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  width: 150px;
+}
+
+.social-icon
+{
+  width: 20px;
+  transition: 0.5s;
+}
+
+.social-icon:hover
+{
+  width: 25px;
+  position: static;
+}
+
+.header-content
+{
+  /* border: 1px solid white; */
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.image
+{
+  width: 100%;
+  z-index: 1;
+}
+
+.heading
+{
+  /* border: 2px solid red; */
+  position: absolute;
+  color: white;
+  width: 940px;
+  text-align: right;
+  bottom: -50px;
+  right: 16px;
+  font-family: "Perpetua Titling MT";
+  font-size: 100px;
+}
+
+.nav-image
+{
+  /* border: 2px solid pink; */
+  margin: auto;
+  width: 500px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ /* ============MENU 1============  */
+
+.menu-item1
+{
+  color: #F0B3B3;
+  font-family: "Tw Cen MT Condensed";
+  font-weight: 1000;
+  font-size: 25px;
+  margin-right: 25px;
+  max-width: 2000px;
+  transition: 0.5s;
+}
+
+.item1
+{
+  background: #25437A;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.item1:first-child
+{
+  width: 60%;
+  margin-top: 27px;
+}
+
+.item1:nth-child(2)
+{
+  width: 50%;
+  margin-top: 25px;
+}
+
+.item1:nth-child(3)
+{
+  width: 40%;
+  margin-top: 25px;
+}
+
+.menu-item1:hover
+{
+  margin-right: 15px;
+}
+
+.view1
+{
+  padding-top: 40px;
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+
+}
+
+.view-more
+{
+  color: #25437A;
+  font-family: "Tw Cen MT Condensed";
+  font-weight: 1000;
+  font-size: 25px;
+  text-align: center;
+}
+
+.arrow1
+{
+  width: 35px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding-top: 5px;
+  transition: 0.5s;
+}
+
+.arrow1:hover
+{
+  padding-top: 15px;
+}
+
+/* ============ARTICLES============ */
+
+.articles
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.article
+{
+  width: 45%;
+  background: white;
+  margin-bottom: 80px;
+  padding: 15px 15px 15px 15px;
+  transition: 1s;
+}
+
+.article:hover
+{
+    margin-top: 20px;
+}
+
+.article-image
+{
+  width:100%;
+}
+
+.article-heading
+{
+  margin: 0;
+  color: #25437A;
+  font-family: "Tw Cen MT Condensed";
+  font-weight: 1000;
+  font-size: 40px;
+  text-align: center;
+}
+
+.text
+{
+  font-family: "Perpetua";
+  color: #25437A;
+  font-size: 25px;
+  margin: 10px;
+  text-align: center;
+}
+
+.article-link
+{
+  color: #25437A;
+  width: 100px;
+  margin: 0 auto;
+  font-family: "Tw Cen MT Condensed";
+  font-weight: 1000;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transition: 0.5s;
+}
+
+.article-link:hover
+{
+ color: #F0B3B3;
+}
+
+.article-link:after
+{
+  content:"";
+  position: absolute;
+  background: #25437A;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  transition: 0.5s;
+}
+
+.article-link:hover:after
+{
+  background: #F0B3B3;
+  width: 100%;
+}
+
+/* ============MENU 2============ */
+
+.view2
+{
+  border: 2px solid #25437A;
+  width: 250px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  color: #25437A;
+  font-family: "Tw Cen MT Condensed";
+  font-weight: 1000;
+  font-size: 25px;
+    transition: 0.5s;
+}
+
+.view2:hover
+{
+  background: #25437A;
+  color: #F0B3B3;
+}
+
+.arrow2
+{
+  max-width: 15px;
+}
+
+.menu-item2
+{
+  color: #F0B3B3;
+  font-family: "Tw Cen MT Condensed";
+  font-weight: 1000;
+  font-size: 25px;
+  margin-left: 25px;
+  max-width: 2000px;
+  transition: 0.5s;
+}
+
+.item2
+{
+  background: #25437A;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.item2:first-child
+{
+  width: 60%;
+  margin-top: 27px;
+}
+
+.item2:nth-child(2)
+{
+  width: 50%;
+  margin-top: 25px;
+}
+
+.item2:nth-child(3)
+{
+  width: 40%;
+  margin-top: 25px;
+}
+
+.menu-item2:hover
+{
+  margin-left: 15px;
+}
+
+ /* ============ABOUT============  */
+
+ .about
+ {
+   /* border: 1px solid red; */
+   max-width: 1600px;
+   margin-top: 80px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .img-about
+ {
+   background: white;
+   padding: 20px 20px 20px 150px;
+   transition: 1s;
+ }
+
+ .img-about:hover
+ {
+   padding-left: 130px;
+ }
+
+ .article-about
+ {
+   /* border: 1px solid black; */
+   width: 400px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .title-about
+ {
+   margin: 0;
+   color: #25437A;
+   font-family: "Tw Cen MT Condensed";
+   font-weight: 1000;
+   font-size: 85px;
+   text-align: center;
+ }
+
+ .text-about
+ {
+   font-family: "Perpetua";
+   color: #25437A;
+   font-size: 25px;
+   text-align: center;
+ }
+
+ /* ============CONTACT============  */
+
+ .contact
+ {
+   background: #25437A;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-top: 80px;
+   padding: 55px 0;
+ }
+
+ .contact-title
+ {
+   font-family: "Tw Cen MT Condensed";
+   font-weight: 1000;
+   font-size: 85px;
+   color: white;
+   margin: 0;
+ }
+
+ .form
+ {
+   width: 400px;
+ }
+
+.input
+{
+  width: 400px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline:none;
+  margin-top: 25px;
+  color: white;
+  font-family: "Perpetua";
+  font-size: 20px;
+}
+
+.input::placeholder
+{
+  color: white;
+  font-family: "Perpetua";
+  font-size: 20px;
+}
+
+.message
+{
+  margin-top: 80px;
+}
+
+.submit
+{
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-family: "Tw Cen MT Condensed";
+  font-weight: 1000;
+  font-size: 22px;
+  margin-top: 40px;
+  cursor: pointer;
+  width: 150px;
+  transition: 0.5s;
+}
+
+.submit:hover{
+  background:white;
+  color: #25437A;
+}
+
+/* ============FOOTER============ */
+
+.footer-menu
+{
+  width: 230px;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+
+.footer-link
+{
+  font-family: "Tw Cen MT Condensed";
+  font-weight: 1000;
+  font-size: 17px;
+  color:#25437A;
+  position: relative;
+}
+
+.footer-link:after
+{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  background: #25437A;
+  transition: 0.5s;
+}
+
+.footer-link:hover:after
+{
+  width: 100%;
+  background:#25437A;
+}
