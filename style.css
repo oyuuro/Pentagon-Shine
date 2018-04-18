@@ -31,7 +31,7 @@ a
 .nav-header
 {
   background: #25437A;
-  position: fixed;
+/*  position: fixed; */
   width: 100%;
 }
 
